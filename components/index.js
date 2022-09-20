@@ -5,7 +5,10 @@ import FocusedStatusBar from "./FocusedStatusBar";
 
 import { CircleButton, RectButton } from "./Button";
 
+import DetailsDesc from "./DetailsDesc";
+import DetailsBid from "./DetailsBid";
+
 //export all three components efficiently
 export {
-    HomeHeader, NFTCard, FocusedStatusBar, CircleButton, RectButton
+    HomeHeader, NFTCard, FocusedStatusBar, CircleButton, RectButton, DetailsBid, DetailsDesc
 }
