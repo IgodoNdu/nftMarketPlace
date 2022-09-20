@@ -4,10 +4,8 @@ import { Text } from 'react-native'
 
 const Details = () => {
   return (
-    <div>
       <Text>Details</Text>
-    </div>
   )
 }
 
-export default Details
+export default Details;
