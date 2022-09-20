@@ -1,10 +1,18 @@
-import React from 'react';
+import { useState } from 'react';
 //for text rendering
-import { Text } from 'react-native';
+import { View, SafeAreaView, FlatList, Text } from 'react-native';
+
+//Import Components
+import { NFTCard, HomeHeader, FocusedStatusBar } from '../components';
+
+//importing our local assets for use
+import { COLORS, NFTData } from '../constants';
 
 const Home = () => {
   return (
-      <Text>Home</Text>
+      <SafeAreaView style={{ flex: 1 }}>
+
+      </SafeAreaView>
   )
 }
 
