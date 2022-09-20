@@ -16,7 +16,7 @@ const Home = () => {
           <View style={{ flex: 1 }}>
             {/** View (div) to contain all the NFT list */}
             <View style={{ zIndex: 0 }}>
-              <FlatList data={NFTData} renderItem={({ item }) => <Text>{item.name}</Text>} 
+              <FlatList data={NFTData} renderItem={({ item }) => <NFTCard data={item} />} 
               keyExtractor={(item) => item.id}
               showsVerticalScrollIndicator={false}
               ListHeaderComponent={<HomeHeader />} />
