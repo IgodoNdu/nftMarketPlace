@@ -1,10 +1,35 @@
 import React from 'react'
 //for text rendering
-import { Text } from 'react-native'
+import { Text, View, SafeAreaView, Image, StatusBar, FlatList } from 'react-native'
+import { COLORS, SIZES, SHADOWS, FONTS, assets } from '../constants'
+import { CircleButton, RectButton, SubInfo, FocusedStatusBar, DetailsDesc, DetailsBid } from '../components'
 
-const Details = () => {
+const Details = ({ route, navigation }) => {
+  const { data } = route.params;
+
   return (
-      <Text>Details</Text>
+      <SafeAreaView style={{ flex: 1 }}>
+        <FocusedStatusBar
+          barStyle='dark-content'
+          backgroundColor='transparent'
+          translucent={true} />
+
+      {/**View for self closing button component */}
+      <View style={{
+        width: '100%',
+        position: 'absolute',
+        bottom: 0,
+        paddingVertical: SIZES.font,
+        justifyContent: 'center',
+        alignItems: 'center',
+        backgroundColor: 'rgba(255,255,255,0.5)',
+        zIndex: 1
+      }}>
+        <RectButton minWidth={170} fontSize={SIZES.large} {...SHADOWS.dark} />
+      </View>
+      </SafeAreaView>
+
+      
   )
 }
 
